@@ -25,6 +25,13 @@ class Validator implements iValidate
     public static $holdException = false;
     public static $exceptions = array();
 
+    /**
+     * Injected at runtime
+     *
+     * @var Restler instance of restler
+     */
+    public mixed $restler;
+
     public static $preFilters = array(
         //'*'            => 'some_global_filter', //applied to all parameters
         'string' => 'trim', //apply filter function by type (string)

@@ -17,6 +17,13 @@ namespace Luracast\Restler;
  */
 class Scope
 {
+    /**
+     * Injected at runtime
+     *
+     * @var Restler instance of restler
+     */
+    public mixed $restler;
+
     public static $classAliases = array(
 
         //Core
